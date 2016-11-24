@@ -15,7 +15,7 @@ public class EqualsWithoutHashCode {
         Map<Employee, String> cache = loadEmpCache();
         Employee lookupEmp = new Employee("100", "101045");
         String empName = cache.get(lookupEmp);
-        System.out.println(empName);
+        System.out.println(empName);   //null
 
 
         /***************************** Observe behavior of HashSet  without hashcode ***********************/
@@ -32,7 +32,7 @@ public class EqualsWithoutHashCode {
         set.add(em4);
         set.add(em5);
 
-        System.out.println(set);
+        System.out.println(set);  //print duplicate that are not allowed in set
 
     }
 
